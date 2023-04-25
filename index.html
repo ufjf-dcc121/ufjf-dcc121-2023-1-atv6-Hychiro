@@ -13,7 +13,8 @@
         <h1>DCC121 ATV6</h1>
     </header>
     <main>
-
+        <p> A pessoa NOME tem X anos!</p>
+        <p id = "saida"> A pessoa NOME tem X anos!</p>
     </main>
     <footer>
         &copy; Hiero Henrique Barcelos Costa - 2023
@@ -29,6 +30,13 @@
         };
         pessoa.envelhecer();
         console.log(pessoa);
+        const peses = document.getElementsByTagName("p");
+        const element = document.getElementById("saida")
+        console.log(peses);
+        const p = peses[0];
+        console.log(p);
+        p.innerText = `A pessoa ${pessoa.nome} tem ${pessoa.idade} anos!`;
+        element.innerText = "ola";
     </script>
 </body>
 
