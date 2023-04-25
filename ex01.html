@@ -12,11 +12,14 @@
     <p id="second">3</p>
     <p>=</p>
     <p id="third" >?</p>
+    <p id="fourth" >?</p>
     <script>
   const p1 = document.getElementById("first");
   const p2 = document.getElementById("second");
   const p3 = document.getElementById("third");
+  const p4 = document.getElementById("fourth");
   p3.innerText = `${Number(p1.innerText)+Number(p2.innerText)}`;
+    p4.innerText = `A soma de ${p1.innerText} + ${p2.innerText} = ${p3.innerText} `
     </script>
 </body>
 </html>
